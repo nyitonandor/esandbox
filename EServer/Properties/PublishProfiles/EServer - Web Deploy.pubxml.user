@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAb2QIagi5t0qiHStVq1KdWwAAAAACAAAAAAAQZgAAAAEAACAAAACfo3/WF/VDGuq8+Mq8V7UxUadG9AF4JTzZkoYi+LHOCwAAAAAOgAAAAAIAACAAAADeWUtFdg/6R722may496zFLAbHfpxHUJoxfd3cKrpdJYAAAACXBHFBCo3NQGx+HOqwwLJbxlLepFMRCEOrKnQlDLaIZcXosd/CKmQQKneMB+t5owegsjA3B5b35dIO4N6EXrW0CJob3So1VFlqpq75TUXsgSRC32dSbm0k40chacuuGSeRIRN5V8PYe7C3IqgG90hB2+2hqOEX3shOlpVQBNBppUAAAAA6gFVK/+GJm6SWOXoa4DTOXJL1EAdD/JG5PDy5qBYgXhd9n8Sphn828Z0H0XF+PWZHDGycZ6M7+FwA8/UI68e7</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EServerConnectionString">
+      <Value>Data Source=tcp:epshere.database.windows.net,1433%3bInitial Catalog=espheredbserver%3bUser Id=epshere%40epshere%3bPassword=E01sqldb</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="EServer.Models.Context">
+      <Value>Data Source=tcp:epshere.database.windows.net,1433%3bInitial Catalog=espheredbserver%3bUser Id=epshere%40epshere%3bPassword=E01sqldb</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
